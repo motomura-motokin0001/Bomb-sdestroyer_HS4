@@ -5,8 +5,18 @@ public class BombController : MonoBehaviour
     public float explosionForce = 700f;
     public float explosionRadius = 5f;
     public float explosionDelay = 3f; // 爆発までの遅延時間
+    public float destroyYThreshold = 0f; // 破壊されるY座標の閾値
 
     private bool isStuck = false;
+
+    void Update()
+    {
+        // Y座標が0以下になったら破壊する
+        if (transform.position.y <= destroyYThreshold)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void OnCollisionEnter(Collision collision)
     {
