@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private float xRotation = 0f;
     private bool canJump = true;
+    //public string frstSceneName;
 
     void Start()
     {
@@ -46,6 +48,19 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetButtonDown("Jump") && canJump)
                 {
                     moveDirection.y = jumpForce;
+                }
+
+                if (Input.GetKeyDown("1"))
+                {
+                    SceneManager.LoadScene("square");
+                }
+                if (Input.GetKeyDown("2"))
+                {
+                    SceneManager.LoadScene("pyramid");
+                }
+                if (Input.GetKeyDown("3"))
+                {
+                    SceneManager.LoadScene("Board");
                 }
             }
 
