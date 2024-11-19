@@ -9,7 +9,7 @@ public class ResetPrefabs : MonoBehaviour
     public float Zposition = 0;
 
 
-    void Update()
+    void Reset()
     {
         // リセットキーが押されたら
         if (Input.GetKeyDown(resetKey))

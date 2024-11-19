@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ExitGame : MonoBehaviour
 {
-    void Update()
+    public void InputgetkydownEsc()
     {
         // Escapeキーが押された場合
         if (Input.GetKeyDown(KeyCode.Escape))

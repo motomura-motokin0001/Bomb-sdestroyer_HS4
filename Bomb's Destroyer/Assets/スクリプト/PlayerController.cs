@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float lookSpeed = 2f;
     public Transform cameraTransform;
     public float jumpForce = 8f; // ジャンプ力
-    public float gravity = 20f; // 重力
+    public float gravity = 10f; // 重力
     public Vector3 respawnPosition = new Vector3(0f, 1f, 0f); // リスポーン位置
 
     private CharacterController controller;
@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private float xRotation = 0f;
     private bool canJump = true;
     //public string frstSceneName;
+
+    public Collider USE_Collidr;
 
     void Start()
     {
@@ -50,18 +52,7 @@ public class PlayerController : MonoBehaviour
                     moveDirection.y = jumpForce;
                 }
 
-                if (Input.GetKeyDown("1"))
-                {
-                    SceneManager.LoadScene("square");
-                }
-                if (Input.GetKeyDown("2"))
-                {
-                    SceneManager.LoadScene("pyramid");
-                }
-                if (Input.GetKeyDown("3"))
-                {
-                    SceneManager.LoadScene("Board");
-                }
+
             }
 
             // 重力の適用
@@ -95,4 +86,9 @@ public class PlayerController : MonoBehaviour
         transform.position = respawnPosition;
         controller.enabled = true;
     }
+
+
+
+
+
 }
