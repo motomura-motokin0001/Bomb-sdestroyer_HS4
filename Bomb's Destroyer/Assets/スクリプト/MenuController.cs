@@ -15,6 +15,8 @@ public class MenuController : MonoBehaviour
     public Vector3 visiblePosition;
     public float AT = 1.0f;
     public bool CanTime = true;
+    public GameObject MainMene;
+    public bool isMenu = true;
     
 
     void Start()
@@ -66,6 +68,17 @@ public class MenuController : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(MainMene.activeSelf == false && isMenu == true)
+        {
+            menuPanel.anchoredPosition = hiddenPosition;
+        }
+        else 
+        {
+            return;
+        }
+    }
 
 }
 

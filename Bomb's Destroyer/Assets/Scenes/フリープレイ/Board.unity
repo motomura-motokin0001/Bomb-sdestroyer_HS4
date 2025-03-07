@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 4097265}
   - component: {fileID: 4097264}
   - component: {fileID: 4097266}
+  - component: {fileID: 4097267}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -184,6 +185,29 @@ MonoBehaviour:
   DestroySceneName: Board
   SceneLoadName: Title
   EffectSceneName: effectcanvas
+--- !u!114 &4097267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa03ca53c4aab2d4483d6dcd3b879887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 1346661611}
+  menuButton:
+  - {fileID: 1711774899}
+  - {fileID: 360583922}
+  otherButtons: []
+  hiddenPosition: {x: 0, y: 1107, z: 0}
+  visiblePosition: {x: 0, y: 0, z: 0}
+  AT: 1
+  CanTime: 1
+  MainMene: {fileID: 1727653850}
+  isMenu: 1
 --- !u!1 &8900349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,12 +1756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd3cacd3f88a66b4082945b78ec61392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetKey: 114
-  prefabsToReset:
-  - {fileID: 243925584523455250, guid: bb7c0dcc8b7d5f64faac68019dce0a5f, type: 3}
-  Xposition: 65
-  Yposition: 37
-  Zposition: 59
 --- !u!4 &544995829
 Transform:
   m_ObjectHideFlags: 0
@@ -2049,10 +2067,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 288472562893151078, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711774902}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
 --- !u!1 &650673648
 GameObject:
@@ -2322,11 +2337,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &719271243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 288472562893151078, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
-  m_PrefabInstance: {fileID: 602602987}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &725128425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4875,33 +4885,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 677057826562939940, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
   m_PrefabInstance: {fileID: 602602987}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719271243}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1711774902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719271243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa03ca53c4aab2d4483d6dcd3b879887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuPanel: {fileID: 1346661611}
-  menuButton:
-  - {fileID: 1711774899}
-  - {fileID: 360583922}
-  otherButtons: []
-  hiddenPosition: {x: 0, y: 1107, z: 0}
-  visiblePosition: {x: 0, y: 0, z: 0}
-  AT: 1
-  CanTime: 1
 --- !u!1 &1727653850
 GameObject:
   m_ObjectHideFlags: 0
