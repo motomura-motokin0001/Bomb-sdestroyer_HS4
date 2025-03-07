@@ -6,15 +6,18 @@ public class BombThrower : MonoBehaviour
     public Transform bombSpawnPoint;
     public float throwForce = 10f; // 初速度の調整用
     public Camera playerCamera; // プレイヤーカメラ
+    public bool canThrowBomb = true; // 爆弾を投げられるかどうか
 
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (canThrowBomb)
         {
-            ThrowBomb();
-    }
-
+            if (Input.GetMouseButtonDown(0))
+            {
+                ThrowBomb();
+            }
+        }
     void ThrowBomb()
     {
         GameObject bomb = Instantiate(bombPrefab, bombSpawnPoint.position, bombSpawnPoint.rotation);

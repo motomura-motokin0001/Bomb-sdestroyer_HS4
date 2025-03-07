@@ -7,6 +7,9 @@ TagManager:
   - Block
   - Interactable
   - destroyObject
+  - ResetButton_Tag
+  - StageSelect_Right
+  - StageSelect_Left
   layers:
   - Default
   - TransparentFX
@@ -14,11 +17,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - wall
+  - player
+  - block
+  - Bomb
+  - Ground
   - 
   - 
   - 

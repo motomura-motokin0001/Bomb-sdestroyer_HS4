@@ -6,15 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/square.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Title.unity
+    guid: c1899eaf0755e46439812ba2527b589a
   - enabled: 1
-    path: Assets/Scenes/pyramid.unity
-    guid: 9bc69ac5c65e1ab4fae8cccd7c55aeda
-  - enabled: 1
-    path: Assets/Scenes/Board.unity
+    path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/Board.unity"
     guid: bc7654ca9dc694f4e8ba54e823dcab86
   - enabled: 1
-    path: Assets/Scenes/statistics.unity
-    guid: dcc6cd27ae7d30141a999bdc6237f210
-  m_configObjects: {}
+    path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/PD.unity"
+    guid: 47043b4cbc6a7ad4692ebb789baac71e
+  - enabled: 1
+    path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/CB.unity"
+    guid: 9023e7b8a1dcb3345adab63a3a224b33
+  - enabled: 1
+    path: Assets/Scenes/sceneeffect/effectcanvas.unity
+    guid: 66881af6193b7dc41b0386b1894a8e25
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

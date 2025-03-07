@@ -45,7 +45,8 @@ public class BombController : MonoBehaviour
         // 爆発エフェクトの生成
         if (explosionPrefab != null)
         {
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Vector3 spawnPosition = transform.position + new Vector3 (0,1,0);
+            Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
         }
 
         // 爆発範囲内のオブジェクトに爆風を適用

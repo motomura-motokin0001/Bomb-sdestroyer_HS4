@@ -3,7 +3,8 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public float interactDistance = 3f; // インタラクトできる距離
-    private GameObject currentInteractable; // インタラクト可能なオブジェクト
+    public ResetButtonInteract ResetButtonInteract; // リセットボタンのインタラクトスクリプト
+
 
     void Update()
     {
@@ -16,7 +17,6 @@ public class PlayerInteract : MonoBehaviour
 
 void Interact()
 {
-    // プレイヤーの前方にRayを飛ばしてインタラクト可能なオブジェクトをチェック
     Ray ray = new Ray(transform.position, transform.forward);
     RaycastHit hit;
 
@@ -24,23 +24,18 @@ void Interact()
 
     if (Physics.Raycast(ray, out hit, interactDistance))
     {
-        if (hit.collider.CompareTag("Interactable"))
-        {
-            currentInteractable = hit.collider.gameObject;
-            Debug.Log($"ヒットしたオブジェクト: {currentInteractable.name}");
+        Debug.Log($"Rayが {hit.collider.gameObject.name} に当たりました！（タグ: {hit.collider.tag}）");
 
-            // オブジェクトのインタラクトロジックを呼び出す
-            var interactableComponent = currentInteractable.GetComponent<IInteractable>();
-            if (interactableComponent != null)
-            {
-                interactableComponent.Interact();
-            }
-            else
-            {
-                Debug.LogError("IInteractableが見つかりませんでした。");
-            }
+        switch (hit.collider.tag)
+        {
+            case "ResetButton_Tag":
+                Debug.Log("リセットボタンが見つかりました！");
+                ResetButtonInteract.Interact();
+                break;
+            default:
+                Debug.Log("タグが一致しません！");
+                break;
         }
     }
 }
-
 }
