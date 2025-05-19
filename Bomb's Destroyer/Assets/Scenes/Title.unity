@@ -1268,8 +1268,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u30AD\u30E5\u30FC\u30D6"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
-  m_sharedMaterial: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
+  m_sharedMaterial: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1776,11 +1776,11 @@ PrefabInstance:
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -2336,8 +2336,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u30C7\u30D5\u30A9\u30EB\u30C8"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
-  m_sharedMaterial: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
+  m_sharedMaterial: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2695,11 +2695,11 @@ PrefabInstance:
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
@@ -3222,8 +3222,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u30D4\u30E9\u30DF\u30C3\u30C9"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
-  m_sharedMaterial: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
+  m_sharedMaterial: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3859,11 +3859,11 @@ PrefabInstance:
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: 11400000, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 7131106481581163315, guid: baf9c04c77203514a832ef5cf1da733e, type: 2}
+      objectReference: {fileID: -6596238968359357425, guid: 07b127b2730488d49b5314c3268ad2b1, type: 2}
     - target: {fileID: 1692051043559939175, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
