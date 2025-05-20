@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BombThrower : MonoBehaviour
 {
@@ -7,13 +8,14 @@ public class BombThrower : MonoBehaviour
     public float throwForce = 10f; // 初速度の調整用
     public Camera playerCamera; // プレイヤーカメラ
     public bool canThrowBomb = true; // 爆弾を投げられるかどうか
+    public PlayerInput _playerInput;
 
 
     void Update()
     {
         if (canThrowBomb)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (_playerInput.actions["Throw"].triggered)
             {
                 ThrowBomb();
             }

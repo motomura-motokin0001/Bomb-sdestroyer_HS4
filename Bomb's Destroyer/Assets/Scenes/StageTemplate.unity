@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 4097265}
   - component: {fileID: 4097264}
   - component: {fileID: 4097266}
+  - component: {fileID: 4097267}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -184,6 +185,29 @@ MonoBehaviour:
   DestroySceneName: Board
   SceneLoadName: Title
   EffectSceneName: effectcanvas
+--- !u!114 &4097267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa03ca53c4aab2d4483d6dcd3b879887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 1346661611}
+  menuButton:
+  - {fileID: 1711774899}
+  - {fileID: 360583922}
+  otherButtons: []
+  hiddenPosition: {x: 0, y: 1107, z: 0}
+  visiblePosition: {x: 0, y: 0, z: 0}
+  AT: 1
+  CanTime: 1
+  MainMene: {fileID: 1727653850}
+  isMenu: 1
 --- !u!1 &29955402
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +508,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 481d1d21c29b1ed41b50472c451abfda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -800,6 +823,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169435002}
   m_CullTransparentMesh: 1
+--- !u!114 &252807887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 501340058448957503, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
+  m_PrefabInstance: {fileID: 7983411051064412962}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &270805536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,10 +1977,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 288472562893151078, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711774902}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
 --- !u!1 &689110638
 GameObject:
@@ -2009,7 +2040,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 481d1d21c29b1ed41b50472c451abfda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -2180,11 +2210,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1 &719271243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 288472562893151078, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
-  m_PrefabInstance: {fileID: 602602987}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &725128425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2341,7 +2366,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 481d1d21c29b1ed41b50472c451abfda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4212,7 +4236,6 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 2100000, guid: 481d1d21c29b1ed41b50472c451abfda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4253,35 +4276,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 677057826562939940, guid: 0f7967ea92f02e349b8772b0fedd930a, type: 3}
   m_PrefabInstance: {fileID: 602602987}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719271243}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1711774902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719271243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa03ca53c4aab2d4483d6dcd3b879887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuPanel: {fileID: 1346661611}
-  menuButton:
-  - {fileID: 1711774899}
-  - {fileID: 360583922}
-  otherButtons: []
-  hiddenPosition: {x: 0, y: 1107, z: 0}
-  visiblePosition: {x: 0, y: 0, z: 0}
-  AT: 1
-  CanTime: 1
-  MainMene: {fileID: 0}
-  isMenu: 1
 --- !u!1 &1727653850
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,6 +5548,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1187562534757219173, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 252807887}
+    - target: {fileID: 1187562534757219173, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
       propertyPath: ResetButtonInteract
       value: 
       objectReference: {fileID: 1335545334}
@@ -5559,9 +5563,21 @@ PrefabInstance:
       propertyPath: StageSelectButton_Right
       value: 
       objectReference: {fileID: 1597935115}
+    - target: {fileID: 2573849869864193453, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718569774860513996, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
+      propertyPath: _playerInput
+      value: 
+      objectReference: {fileID: 252807887}
     - target: {fileID: 5898759275200445054, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
       propertyPath: m_Name
       value: "\u30D7\u30EC\u30A4\u30E4\u30FC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5929958342535947265, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -110.327866
       objectReference: {fileID: 0}
     - target: {fileID: 5929958342535947265, guid: d2ea43cf7660c8e4780525a3b80e954a, type: 3}
       propertyPath: m_LocalPosition.y

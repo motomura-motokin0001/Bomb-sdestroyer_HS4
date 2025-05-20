@@ -1,15 +1,21 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
     public float interactDistance = 3f; // インタラクトできる距離
     public ResetButtonInteract ResetButtonInteract; // リセットボタンのインタラクトスクリプト
+    public PlayerInput playerInput;
 
+    private void Start()
+    {
+        playerInput = FindObjectOfType<PlayerInput>();
+    }
 
     void Update()
     {
         // 「E」キーが押された時にインタラクトを試みる
-        if (Input.GetKeyDown(KeyCode.E))
+        if (playerInput.actions["Interact"].triggered)
         {
             Interact();
         }

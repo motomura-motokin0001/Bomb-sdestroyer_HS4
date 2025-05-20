@@ -117,7 +117,7 @@ namespace StarterAssets
 				JumpAndGravity();
 				GroundedCheck();
 				Move();
-				RotationSpeed = 3f;
+				RotationSpeed = 0.7f;
 				Cursor.lockState = CursorLockMode.Locked;
 			}
 			else

@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem; 
 
 public class keyAction : MonoBehaviour
 {
     public GameObject PauseOJ;
     private bool isMenuVisible = false;
     public BombThrower bombThrower;
+
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class keyAction : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (bombThrower._playerInput.actions["Menu"].triggered)
         {
             isMenuVisible = !isMenuVisible;
             bombThrower.canThrowBomb = !isMenuVisible;
