@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private CharacterController controller;
     private Vector3 moveDirection = Vector3.zero;
-    private float xRotation = 0f;
+    // private float xRotation = 0f;
     [SerializeField] private bool canJump = true;
     public bool lockCursor = true; // マウスカーソルをロックするかどうか
 

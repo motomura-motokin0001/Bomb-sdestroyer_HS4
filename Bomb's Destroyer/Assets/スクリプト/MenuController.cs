@@ -17,11 +17,11 @@ public class MenuController : MonoBehaviour
     public bool CanTime = true;
     public GameObject MainMene;
     public bool isMenu = true;
-    
+
 
     void Start()
     {
-        
+
         // メニューを隠れた位置に設定
         menuPanel.anchoredPosition = hiddenPosition;
 
@@ -40,14 +40,14 @@ public class MenuController : MonoBehaviour
 
     void ToggleMenu()
     {
-        
+
         if (isMenuVisible)
         {
-            
+
             // メニューを隠す
             menuPanel.DOAnchorPos(hiddenPosition, AT).SetUpdate(true);
 
-            
+
         }
         else
         {
@@ -70,15 +70,17 @@ public class MenuController : MonoBehaviour
 
     void Update()
     {
-        if(MainMene.activeSelf == false && isMenu == true)
+        if (MainMene.activeSelf == false && isMenu == true)
         {
             menuPanel.anchoredPosition = hiddenPosition;
         }
-        else 
+        else
         {
             return;
         }
     }
+    
+    
 
 }
 

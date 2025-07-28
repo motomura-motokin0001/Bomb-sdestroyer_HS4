@@ -1,15 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SkyBoxManager : MonoBehaviour
 {
-    [Range(0.001f,1.0f)]
+    [Range(0.001f, 1.0f)]
     public float rotateSpeed;
+
     public Material[] Sky_Box_List;
-    int num = 0;
+    private int num = 0;
+
     public Camera Camera;
-    void Update ()
+
+    public InputActionReference changeActionRef; // ← これがInputActionReference
+
+    void OnEnable()
+    {
+        changeActionRef.action.Enable(); // 有効化が必要
+    }
+
+    void OnDisable()
+    {
+        changeActionRef.action.Disable(); // 無効化も忘れずに
+    }
+
+    void Update()
     {
         Cursor.lockState = CursorLockMode.None;
         Rotation();
@@ -18,22 +32,19 @@ public class SkyBoxManager : MonoBehaviour
 
     void Change()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (changeActionRef.action.triggered) // ← triggeredを使う
         {
-            num += 1;
-        }
+            num++;
 
-        if(num >= Sky_Box_List.Length)
-        {
-            num = 0;
-        }
+            if (num >= Sky_Box_List.Length)
+                num = 0;
 
-        RenderSettings.skybox = Sky_Box_List[num];
+            RenderSettings.skybox = Sky_Box_List[num];
+        }
     }
 
     void Rotation()
     {
         Camera.transform.Rotate(Vector3.up * rotateSpeed);
-
     }
 }

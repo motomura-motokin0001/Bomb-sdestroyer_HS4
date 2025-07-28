@@ -11,13 +11,18 @@ public class ScrollBarController : MonoBehaviour
     public BombController Bomb;
     public TextMeshProUGUI P_Text;  
     public TextMeshProUGUI D_Text;
+    //10000
 
 
     void Start()
     {
+        Bomb.explosionForce = 10000;
+        
         // 初期値を代入
         scrollbar_power.value = scrollValue_power;
         scrollbar_delay.value = scrollValue_Delay;
+        P_Text.text = "威力:" + scrollbar_power.value.ToString();
+        D_Text.text = "爆発の遅延:" + scrollbar_delay.value.ToString();
         
         // Scrollbarの値が変わるたびにメソッドを呼び出す
         scrollbar_power.onValueChanged.AddListener(UpdateValue_power);

@@ -5,7 +5,7 @@ public class BombController : MonoBehaviour
 {
     public float explosionForce = 700f;
     public float explosionRadius = 5f;
-    public float explosionDelay = 3f; // 爆発までの遅延時間
+    public float explosionDelay = 0f; // 爆発までの遅延時間
     public float destroyYThreshold = 0f; // 破壊されるY座標の閾値
     public GameObject explosionPrefab; // 爆発エフェクトのプレハブ
 
@@ -32,12 +32,13 @@ public class BombController : MonoBehaviour
     {
         // ボムをブロックに引っ付ける
         isStuck = true;
-        Rigidbody rb = GetComponent<Rigidbody>();
-        rb.isKinematic = true;
+        // Rigidbody rb = GetComponent<Rigidbody>();
+        // rb.isKinematic = true;
         transform.SetParent(collision.transform);
         
         // 一定時間後に爆発
         Invoke("Explode", explosionDelay);
+        
     }
 
     void Explode()

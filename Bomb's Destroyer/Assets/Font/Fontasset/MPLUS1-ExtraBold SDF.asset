@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: MPLUS1-ExtraBold SDF
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: -58436699
   material: {fileID: 4672571737688340536}
-  materialHashCode: 0
+  materialHashCode: 714061669
   m_Version: 1.1.0
   m_SourceFontFileGUID: 01673c5eedd9f654ea1504f24410ad49
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 01673c5eedd9f654ea1504f24410ad49, type: 3}
@@ -255,9 +255,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 1
-    - _ScaleRatioB: 1
-    - _ScaleRatioC: 1
+    - _ScaleRatioA: 0.9
+    - _ScaleRatioB: 0.73125
+    - _ScaleRatioC: 0.73125
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0

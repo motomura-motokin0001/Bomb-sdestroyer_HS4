@@ -315,13 +315,40 @@
             ]
         },
         {
-            "name": "UI",
+            "name": "UIControl",
             "id": "e68344f3-30b6-4204-8a1a-68002e09c012",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "CursorMove",
+                    "type": "Value",
+                    "id": "14e2d42d-6971-488d-9b61-80f731388f23",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Select",
                     "type": "Button",
-                    "id": "4b27d3c7-4255-44c4-a58d-9320f8cde456",
+                    "id": "be7b9e70-0c3c-47e5-bf07-fae990cec802",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "キャンセル",
+                    "type": "Button",
+                    "id": "4925ee72-ad04-45f2-9e50-577858921245",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Change",
+                    "type": "Button",
+                    "id": "21dc7924-ed07-41d8-9a55-11dcbb93051f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -331,12 +358,67 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "23653c30-57bb-4c6a-908f-61fc20cb8ab9",
-                    "path": "",
+                    "id": "0145e8bd-6f0d-486c-9678-a2e108037be2",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "CursorMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb4e61ea-e93b-485f-ad59-1a225be4d7e2",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "11a80d1d-400b-4fd4-a655-dba0d650ee2a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5cf0bbbc-8e0f-424b-936e-bd9c789fda6d",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "キャンセル",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "770558d3-b2d7-403f-bc36-477833cf5fbd",
+                    "path": "<Gamepad>/select",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d5904cf6-d263-4b56-9c7b-20ebc9cf9260",
+                    "path": "<Keyboard>/p",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
