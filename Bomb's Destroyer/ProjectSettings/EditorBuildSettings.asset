@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/Board.unity"
     guid: bc7654ca9dc694f4e8ba54e823dcab86
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/PD.unity"
     guid: 47043b4cbc6a7ad4692ebb789baac71e
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/\u30D5\u30EA\u30FC\u30D7\u30EC\u30A4/CB.unity"
     guid: 9023e7b8a1dcb3345adab63a3a224b33
   - enabled: 1
