@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u30EA\u30BB\u30C3\u30C8\n\u30DC\u30BF\u30F3"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 99bde812466e47543af4d433516adadf, type: 2}
+  m_sharedMaterial: {fileID: 2304201329300703233, guid: 99bde812466e47543af4d433516adadf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -271,7 +271,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dbab5548f7785914497ce13cb4474df1, type: 2}
+  - {fileID: 2377376760783321371, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -500,8 +500,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u306E\u6570\n00"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 99bde812466e47543af4d433516adadf, type: 2}
+  m_sharedMaterial: {fileID: 2304201329300703233, guid: 99bde812466e47543af4d433516adadf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -630,7 +630,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1aaa698fbb2347b438c6f667dc2658e1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: dbab5548f7785914497ce13cb4474df1, type: 2}
+      objectReference: {fileID: 2377376760783321371, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
     - target: {fileID: 919132149155446097, guid: 1aaa698fbb2347b438c6f667dc2658e1, type: 3}
       propertyPath: m_Name
       value: "\u4E09\u89D2"
@@ -697,15 +697,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32
+      value: -1043.4436
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: -816.367
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.98761964
+      value: 7.6104794
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -713,11 +713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3c5c75fde8e64e24f85c09fb89962b6e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -793,13 +793,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabsToReset:
-  - {fileID: 9051550114651360055, guid: c87bdf992bcf1a144b1f008e0a2e128b, type: 3}
+  - {fileID: 243925584523455250, guid: bb7c0dcc8b7d5f64faac68019dce0a5f, type: 3}
   destroyPrefabs:
   - {fileID: 3702631383622039973, guid: fbbda809d59774e4cbd37c5c2341e9a8, type: 3}
   - {fileID: 7360591766121505986, guid: 708772d6d0cb9a8429bf2bbed7b916b7, type: 3}
-  Xposition: 23
-  Yposition: 2
-  Zposition: 77
+  Xposition: 65
+  Yposition: 36
+  Zposition: 108
 --- !u!95 &7413442020903220945
 Animator:
   serializedVersion: 5
