@@ -775,8 +775,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1.1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 99bde812466e47543af4d433516adadf, type: 2}
-  m_sharedMaterial: {fileID: 2304201329300703233, guid: 99bde812466e47543af4d433516adadf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 05677ea20e8573e46aeb6225b2413bdd, type: 2}
+  m_sharedMaterial: {fileID: 7355416262911070880, guid: 05677ea20e8573e46aeb6225b2413bdd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1915,9 +1915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329ae867e5472f46b4212589834a6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroySceneName: Title
-  SceneLoadName: Board
-  EffectSceneName: effectcanvas
 --- !u!4 &1296888060
 Transform:
   m_ObjectHideFlags: 0
@@ -2383,9 +2380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329ae867e5472f46b4212589834a6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroySceneName: Title
-  SceneLoadName: PD
-  EffectSceneName: effectcanvas
 --- !u!4 &1734416009
 Transform:
   m_ObjectHideFlags: 0
@@ -2660,9 +2654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1329ae867e5472f46b4212589834a6ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DestroySceneName: Title
-  SceneLoadName: CB
-  EffectSceneName: effectcanvas
 --- !u!4 &1885864360
 Transform:
   m_ObjectHideFlags: 0
