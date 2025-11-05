@@ -47,7 +47,8 @@ public class BombController : MonoBehaviour
         if (explosionPrefab != null)
         {
             Vector3 spawnPosition = transform.position + new Vector3 (0,1,0);
-            Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
+            GameObject effect = Instantiate(explosionPrefab, spawnPosition, Quaternion.identity);
+            Destroy(effect, 3f);
         }
 
         // 爆発範囲内のオブジェクトに爆風を適用
@@ -63,5 +64,6 @@ public class BombController : MonoBehaviour
 
         // ボムの破壊
         Destroy(gameObject);
+        
     }
 }

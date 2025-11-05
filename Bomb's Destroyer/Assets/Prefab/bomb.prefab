@@ -366,4 +366,4 @@ MonoBehaviour:
   explosionRadius: 100
   explosionDelay: 0
   destroyYThreshold: -10
-  explosionPrefab: {fileID: 3702631383622039973, guid: fbbda809d59774e4cbd37c5c2341e9a8, type: 3}
+  explosionPrefab: {fileID: 2100000, guid: e7c1fcb75eb276b43abdcf95bb823781, type: 2}
